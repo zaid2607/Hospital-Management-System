@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Hospital Management System</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#patient-management">Patient Management</a></li>
+        <li><a href="#staff-management">Staff Management</a></li>
+        <li><a href="#invoicing">Invoicing</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#help">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage -->
+  <section id="home" class="hero">
+    <h1>Welcome to the Hospital Management System</h1>
+    <p>Your one-stop solution for efficient hospital management.</p>
+    <button onclick="alert('More Information Coming Soon!')">Learn More</button>
+  </section>
+
+  <!-- Login Form -->
+  <section id="login" class="form-container">
+    <h2>Login</h2>
+    <form action="#" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+      <a href="#" class="forgot-password">Forgot Password?</a>
+    </form>
+  </section>
+
+  <!-- Patient Registration -->
+  <section id="patient-management" class="form-container">
+    <h2>Patient Registration</h2>
+    <form action="#">
+      <label for="patient-name">Name:</label>
+      <input type="text" id="patient-name" name="patient-name" required>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" required>
+      <button type="submit">Register Patient</button>
+    </form>
+  </section>
+
+  <!-- Staff Registration -->
+  <section id="staff-management" class="form-container">
+    <h2>Staff Registration</h2>
+    <form action="#">
+      <label for="staff-name">Name:</label>
+      <input type="text" id="staff-name" name="staff-name" required>
+      <label for="role">Role:</label>
+      <input type="text" id="role" name="role" required>
+      <label for="contact-staff">Contact Number:</label>
+      <input type="text" id="contact-staff" name="contact-staff" required>
+      <button type="submit">Register Staff</button>
+    </form>
+  </section>
+
+  <!-- Invoice Generation -->
+  <section id="invoicing" class="form-container">
+    <h2>Generate Invoice</h2>
+    <form action="#">
+      <label for="invoice-patient">Patient:</label>
+      <input type="text" id="invoice-patient" name="invoice-patient" required>
+      <label for="invoice-amount">Amount:</label>
+      <input type="number" id="invoice-amount" name="invoice-amount" required>
+      <button type="submit">Generate Invoice</button>
+    </form>
+  </section>
+
+  <!-- Help Section -->
+  <section id="help">
+    <h2>Help & Support</h2>
+    <p>FAQs and guides to help you navigate the system.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
